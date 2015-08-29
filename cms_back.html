@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://cms.diyidan.net/cms/postlist -->
+<html lang="zh-CN"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Account Settings - Medicine CMS Panel</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="https://cms.diyidan.net/static/css/bootstrap.min.css?v=b03252f071f815901840c921b63f2043" rel="stylesheet">
+<link href="https://cms.diyidan.net/static/css/bootstrap-responsive.min.css?v=a9521bc15f0f1934546cdb2fca37f85a" rel="stylesheet">
+<!-- <link href="//fonts.opencas.cn/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet" /> -->
+<link href="https://cms.diyidan.net/static/css/font-awesome.css?v=1bc2e1a147c235690b408cfda0803abc" rel="stylesheet">
+<link href="https://cms.diyidan.net/static/css/adminia.css?v=4a22ccd614c8abdf662834c169a455d6" rel="stylesheet">
+<link href="https://cms.diyidan.net/static/css/adminia-responsive.css?v=b72379f8f42c3ebf51da03bdf9092db1" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style type="text/css">
+.ie6 div.container,
+.ie7 div.container,
+.ie8 div.container {
+width: 1170px;
+}
+.ie6 div.span2,
+.ie7 div.span2,
+.ie8 div.span2 {
+width: 170px;
+}
+.ie6 div.span10,
+.ie7 div.span10,
+.ie8 div.span10 {
+width: 970px;
+}
+</style>
+<style type="text/css">
+.tips {
+font-size:12px;}
+#list_box {
+position:relative;
+width:auto;
+margin-left:auto;
+padding:2px;
+background:#f3f3f3;
+border:0px solid #CCC;
+}
+#tags_list {
+margin:0;
+padding:0;
+list-style:none;
+}
+.hover {
+background:#33CCFF;
+color:#333333;
+}
+.btn-small {
+padding: 0px;
+}
+</style>
+
+<script async="" src="./Account Settings - Medicine CMS Panel_files/analytics.js"></script><script src="./Account Settings - Medicine CMS Panel_files/common.js"></script>
+
+<script type="text/javascript">
+function checkSearch() {
+reg = /^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/;
+str = document.getElementById('startTime').value
+isTimeRight = reg.test(document.getElementById('startTime').value);
+if (str != '' && !isTimeRight) { alert("开始时间不符合要求"); return false; }
+str = document.getElementById('endTime').value
+isTimeRight = reg.test(document.getElementById('endTime').value);
+if (str != '' && !isTimeRight) { alert("结束时间不符合要求"); return false; }
+// document.searchForm.submit();
+}
+</script>
+
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<!-- <a class="brand" href="./index.html">内容管理面板</a> -->
+<a class="brand" href="https://cms.diyidan.net/cms">内容管理面板</a>
+<div class="nav-collapse">
+<ul class="nav pull-right">
+<li>
+<!--
+<a href="#"><span class="badge badge-warning">7</span></a>
+-->
+</li>
+<li class="divider-vertical"></li>
+<li class="dropdown">
+<a data-toggle="dropdown" class="dropdown-toggle " href="https://cms.diyidan.net/cms/postlist#">
+<i class="icon-chevron-left"></i>
+diyidan_super_admin
+<i class="icon-chevron-right"></i>
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://cms.diyidan.net/cms/account"><i class="icon-user"></i> 帐号设置</a>
+</li>
+<li class="divider"></li>
+<li>
+<a href="https://cms.diyidan.net/cms/logout"><i class="icon-off"></i> 登出</a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /nav-collapse -->
+</div> <!-- /container -->
+</div> <!-- /navbar-inner -->
+</div> <!-- /navbar -->
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span2">
+<div class="account-container">
+<div class="account-avatar">
+
+<img src="./Account Settings - Medicine CMS Panel_files/superadmin.jpg" alt="" class="thumbnail">
+
+</div> <!-- /account-avatar -->
+<div class="account-details">
+<span class="account-name">diyidan_super_admin</span>
+
+<span class="account-role">系统管理员</span>
+
+<span class="account-actions">
+<a href="https://cms.diyidan.net/cms/account">修改帐号设置</a>
+</span>
+</div> <!-- /account-details -->
+</div> <!-- /account-container -->
+<hr>
+
+ <ul id="main-nav" class="nav nav-tabs nav-stacked">
+
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/musiclist">
+<i class="icon-film"></i>
+媒体管理
+</a>
+</li>
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/topiclist">
+<i class="icon-film"></i>
+标签管理
+</a>
+</li>
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/area/apply">
+<i class="icon-user"></i>
+分区审核
+</a>
+</li>
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/reportlist">
+<i class="icon-user"></i>
+举报统计
+</a>
+</li>
+
+
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/chatlist">
+<i class="icon-user"></i>
+聊天管理
+</a>
+</li>
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/push">
+<i class="icon-user"></i>
+推送消息
+</a>
+</li>
+
+
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/userlist">
+<i class="icon-user"></i>
+用户管理
+</a>
+</li>
+
+
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/user/stats">
+<i class="icon-user"></i>
+用户统计
+</a>
+</li>
+
+
+
+<li class="active">
+
+<a href="./Account Settings - Medicine CMS Panel_files/Account Settings - Medicine CMS Panel.html">
+<i class="icon-pushpin"></i>
+贴子管理
+</a>
+</li>
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/commentlist">
+<i class="icon-envelope"></i>
+评论管理
+</a>
+</li>
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/image/upload">
+<i class="icon-camera"></i>
+上传照片
+</a>
+</li>
+
+
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/user/livestats">
+<i class="icon-lock"></i>
+实时统计
+</a>
+</li>
+
+
+<li>
+
+<a href="https://cms.diyidan.net/cms/account">
+<i class="icon-lock"></i>
+帐号设置
+</a>
+</li>
+</ul>
+<hr>
+<div class="sidebar-extra">
+<p></p>
+</div> <!-- .sidebar-extra -->
+<br>
+
+
+</div> <!-- /span2 -->
+
+<div class="span10">
+<h1 class="page-title">
+<i class="icon-home"></i>
+贴子管理
+</h1>
+<div class="widget widget-table">
+<div class="widget-header">
+<i class="icon-th-list"></i>
+<h3>贴子信息</h3>
+</div> <!-- /widget-header -->
+<div class="widget-content" style="word-break:break-all;">
+<form action="" id="searchForm" name="form1" enctype="multipart/form-data" class="form-horizontal" method="get">
+<table class="table table-striped table-bordered">
+<tbody>
+<tr>
+<td width="20%" align="center">
+<label class="control-label" for="postId">贴子ID</label>
+</td>
+<td width="30%" align="center">
+<input type="text" id="postId" name="postId" placeholder="" value="">
+</td>
+<td width="20%" align="center">
+<label class="control-label" for="postTitle">贴子标题</label>
+</td>
+<td width="30%" align="center">
+<input type="text" id="postTitle" name="postTitle" placeholder="" value="">
+</td>
+</tr>
+<tr>
+<td width="20%" align="center">
+<label class="control-label" for="postUser">发贴人</label>
+</td>
+<td width="30%" align="center">
+<input type="text" id="postUser" name="postUser" value="">
+</td>
+<td width="20%" align="center">
+<label class="control-label" for="postTag">标签</label>
+</td>
+<td width="30%" align="center">
+<input type="text" id="postTag" name="postTag" placeholder="" value="">
+</td>
+</tr>
+<tr>
+<td width="20%" align="center">
+<label class="control-label" for="postUser">发布状态</label>
+</td>
+<td width="30%" align="center">
+<select id="postPublishStatus" name="postPublishStatus">
+<option value="0" selected="">------</option>
+<option value="100">已发布</option>
+<option value="101">未发布</option>
+<option value="198">用户删除</option>
+<option value="199">已删除</option>
+</select>
+</td>
+<td width="20%" align="center">
+<label class="control-label" for="postCategory">帖子板块</label>
+</td>
+<td width="30%" align="center">
+<select id="postCategory" name="postCategory">
+<option value="">无</option>
+<option value="1">动画</option>
+<option value="2">漫画</option>
+<option value="3">游戏</option>
+<option value="4">小说</option>
+<option value="5">COS</option>
+<option value="6">同人</option>
+<option value="7">展会</option>
+<option value="8">声优</option>
+<option value="9">周边</option>
+<option value="10">音乐</option>
+<option value="11">水弹</option>
+<option value="12">新番</option>
+</select>
+</td>
+</tr>
+<tr>
+<td width="20%" align="center">
+<label class="control-label" for="postArea">帖子分区</label>
+</td>
+<td width="30%" align="center">
+<select id="postArea" name="postArea" onchange="getSubArea()">
+<option value="">无分区</option>
+<option value="101001">【新番讨论区】没有黄段子存在的无聊世界</option>
+<option value="101002">【新番讨论区】Charlotte 夏洛特</option>
+<option value="101003">【新番讨论区】六花的勇者</option>
+<option value="101004">【新番讨论区】God Eater 噬神者</option>
+<option value="101007">【新番讨论区】无头骑士异闻录×2 转</option>
+<option value="101008">【新番讨论区】学园孤岛</option>
+<option value="101009">【新番讨论区】干物妹小埋</option>
+<option value="101010">【新番讨论区】我老婆是学生会长！</option>
+<option value="101011">【新番讨论区】Chaos Dragon红龙战役</option>
+<option value="101012">【新番讨论区】OVERLORD</option>
+<option value="101013">【新番讨论区】Gangsta 黑街</option>
+<option value="106001">【热门动漫综合讨论区】食戟之灵</option>
+<option value="106002">【热门动漫综合讨论区】暗杀教室</option>
+<option value="106003">【热门动漫综合讨论区】Fate/stay night</option>
+<option value="106004">【热门动漫综合讨论区】银魂</option>
+<option value="106005">【热门动漫综合讨论区】海贼王</option>
+<option value="106006">【热门动漫综合讨论区】火影忍者</option>
+<option value="106007">【热门动漫综合讨论区】黑子的篮球</option>
+<option value="106008">【热门动漫综合讨论区】妖精的尾巴</option>
+<option value="106009">【热门动漫综合讨论区】进击的巨人</option>
+<option value="106010">【热门动漫综合讨论区】Love Live</option>
+<option value="106011">【热门动漫综合讨论区】东京食尸鬼</option>
+<option value="102001">【音乐区】动漫原声</option>
+<option value="102003">【音乐区】V家/翻唱/同人</option>
+<option value="102004">【音乐区】古风</option>
+<option value="103001">【视频区】鬼畜</option>
+<option value="103002">【视频区】宅舞</option>
+<option value="103003">【视频区】MAD</option>
+<option value="103004">【视频区】灰体</option>
+<option value="104001">【资源区】动漫美图</option>
+<option value="104002">【资源区】原创绘画</option>
+<option value="104003">【资源区】Cos摄影</option>
+<option value="105001">【事务所】版主申请</option>
+<option value="105002">【事务所】系统上报</option>
+</select>
+</td>
+<td width="20%" align="center">
+<label class="control-label" for="postRecommendWeekNum">推荐周</label>
+</td>
+<td width="30%" align="center">
+<select id="postRecommendWeekNum" name="postRecommendWeekNum">
+<option value="">------</option>
+
+<option value="35">2015-08-24 到 2015-08-30</option>
+
+<option value="34">2015-08-17 到 2015-08-23</option>
+
+<option value="33">2015-08-10 到 2015-08-16</option>
+
+<option value="32">2015-08-03 到 2015-08-09</option>
+
+<option value="31">2015-07-27 到 2015-08-02</option>
+
+<option value="30">2015-07-20 到 2015-07-26</option>
+
+</select>
+</td>
+</tr>
+<tr>
+<td width="20%" align="center">
+<label class="control-label" for="postIsDigest">是否加精</label>
+</td>
+<td width="30%" align="center">
+<select id="postIsDigest" name="postIsDigest">
+<option value="">---</option>
+<option value="101">是</option>
+<option value="100">否</option>
+</select>
+</td>
+<td width="20%" align="center">
+<label class="control-label" for="postOrder">排序规则</label>
+</td>
+<td width="30%" align="center">
+<select id="postOrder" name="postOrder">
+<option value="">---</option>
+<option value="101">按收藏数</option>
+<option value="102">按回复数</option>
+<option value="103">按点赞数</option>
+</select>
+</td>
+</tr>
+<tr>
+<td width="100%" style="text-align:center;" colspan="4">
+<input name="searchPost" type="hidden" value="searchPost">
+<button type="submit" class="btn btn-primary" onclick="return checkSearch();">搜索</button>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn" onclick="return resetForm(this.form);">清空</button>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn" onclick="location.href=&#39;/cms/post/add&#39;;return false;">添加贴子</button>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div> <!-- /widget-content -->
+</div>
+<!-- <div class="alert alert-success" id="success-alert">
+<button type="button" class="close" data-dismiss="alert">x</button>
+<strong>Success! </strong>
+Product have added to your wishlist.
+</div>
+-->
+<div class="widget widget-table">
+<div class="widget-header">
+<i class="icon-th-list"></i>
+<h3>贴子列表</h3>
+</div> <!-- /widget-header -->
+<div class="widget-content" style="word-break:break-all; word-wrap: break-word;">
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<td width="55" align="center">贴子ID</td>
+<td width="60" align="center">发贴人</td>
+<td width="70" align="center">贴子标题</td>
+<td width="100" align="center">贴子内容</td>
+<td width="60" align="center">所属标签</td>
+<td width="20" align="center">点赞数</td>
+<td width="20" align="center">收藏数</td>
+<td width="20" align="center">评论数</td>
+<td width="20" align="center">推荐排名</td>
+<td width="30" align="center">贴子状态</td>
+<td width="50" align="center">发表时间</td>
+<td width="30" align="center">操作</td>
+</tr>
+</thead>
+<tbody>
+
+
+<tr>
+<td align="center">6293178851641512827</td>
+<td align="center">凌゜</td>
+<td align="center">正义与邪恶的区别</td>
+<td align="center"><span><p>喜欢就扔糖</p></span></td>
+<td align="center">讨论</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 10:15:13</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641512827/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641512827/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641512827/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641512827/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641512827/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641512827/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641512449</td>
+<td align="center">Hibiya</td>
+<td align="center">各种美乐～⊰❜◡❜⊱戳进来你不后悔</td>
+<td align="center"><span><p>各种好听音乐～</p></span></td>
+<td align="center">音乐</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 10:13:58</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641512449/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641512449/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641512449/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641512449/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641512449/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641512449/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641510497</td>
+<td align="center">欧尼酱๑•ั็ω•็ั</td>
+<td align="center">好喜欢鹿乃(*/ω＼*)</td>
+<td align="center"><span><p>封面和歌曲无关啊Σ( ° △ °|||)︴</p></span></td>
+<td align="center">萝莉控</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 10:07:42</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641510497/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641510497/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641510497/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641510497/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641510497/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641510497/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641510290</td>
+<td align="center">木头桌子要努力</td>
+<td align="center">哦哈哟</td>
+<td align="center"><span><p>嗯。。。米娜 推荐一下最近的新番 不要偏gal 也不要太血腥的    对我有用的话，嗯，再说吧[1f644]</p></span></td>
+<td align="center">。。</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 10:07:08</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641510290/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641510290/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641510290/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641510290/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641510290/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641510290/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641509742</td>
+<td align="center">中亖病</td>
+<td align="center">这到底是什么番。。。</td>
+<td align="center"><span><p>我原本以为这是校园日常。。。但这是至郁的。。。</p><p>关于丧尸的我看的虽说不少但也不算少。</p><p>可利用op骗人的漫。我还是第一次见。。。</p><p>你见过这洋溢着青春，校园，和丧尸气息的op吗！？</p></span></td>
+<td align="center">学园孤岛</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 10:05:48</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641509742/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641509742/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641509742/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641509742/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641509742/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641509742/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641509275</td>
+<td align="center">墨忆·魂归</td>
+<td align="center">美丽的地球</td>
+<td align="center"><span><p>原来我们的地球如此美丽，(๑•̀ㅂ•́)و✧，喜欢的话，给个糖呗，</p></span></td>
+<td align="center">精美图片</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 10:04:40</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641509275/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641509275/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641509275/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641509275/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641509275/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641509275/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641507646</td>
+<td align="center">生火腿萬嵗</td>
+<td align="center">【每日一水】_(:з」∠)_</td>
+<td align="center"><span><p>_(:з」∠)_</p><p>对不起作者ID并不知道，侵权删</p></span></td>
+<td align="center">_(:з」∠)_</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 10:00:16</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641507646/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641507646/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507646/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507646/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507646/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641507646/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641507545</td>
+<td align="center">火※意志</td>
+<td align="center">标题君被我萌晕了</td>
+<td align="center"><span><p>我发我朋友的画</p></span></td>
+<td align="center">手绘</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 10:00:00</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641507545/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641507545/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507545/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507545/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507545/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641507545/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641507331</td>
+<td align="center">点。。</td>
+<td align="center">治愈系</td>
+<td align="center"><span><p>求给糖(,,•́ . •̀,,)</p></span></td>
+<td align="center">治愈</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:59:28</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641507331/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641507331/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507331/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507331/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507331/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641507331/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641507250</td>
+<td align="center">血の祈り（눈_눈）</td>
+<td align="center">乱步</td>
+<td align="center"><span><p>太好听了，听了十几遍了，还没听腻</p></span></td>
+<td align="center">乱步奇谭</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:59:15</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641507250/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641507250/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507250/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507250/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641507250/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641507250/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641506516</td>
+<td align="center">鱼念七秒钟</td>
+<td align="center">灵魂深处的小震撼～新人冒个泡</td>
+<td align="center"><span><p>我们仍未知道那天所看到的花的名字-小伤感</p></span></td>
+<td align="center">音乐   二元次</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:57:06</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641506516/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641506516/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641506516/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641506516/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641506516/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641506516/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641505020</td>
+<td align="center">那年夏天那片海</td>
+<td align="center">真美</td>
+<td align="center"><span></span></td>
+<td align="center">不喜勿喷</td>
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:53:26</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641505020/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641505020/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641505020/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641505020/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641505020/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641505020/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641502565</td>
+<td align="center">千殿·琰璃</td>
+<td align="center">魔鬼恋人 第一季预告曲</td>
+<td align="center"><span><p>10月就出第二季了呢，让我们忽略开挂女主，去看美男~</p></span></td>
+<td align="center">魔鬼恋人</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:46:46</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641502565/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641502565/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641502565/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641502565/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641502565/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641502565/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641502554</td>
+<td align="center">a♚烦恼</td>
+<td align="center">&gt;_&lt;</td>
+<td align="center"><span><p>-_-|||</p></span></td>
+<td align="center">……</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:46:41</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641502554/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641502554/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641502554/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641502554/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641502554/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641502554/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641502269</td>
+<td align="center">凌゜</td>
+<td align="center">网友要求额外一发</td>
+<td align="center"><span><p>炮姐～</p></span></td>
+<td align="center">炮姐</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:45:42</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641502269/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641502269/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641502269/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641502269/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641502269/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641502269/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641499819</td>
+<td align="center">血の祈り（눈_눈）</td>
+<td align="center">龙珠</td>
+<td align="center"><span><p>回忆啊</p></span></td>
+<td align="center">龙珠超</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:36:51</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641499819/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641499819/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641499819/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641499819/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641499819/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641499819/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641499460</td>
+<td align="center">夏さ洛この夜★lover～</td>
+<td align="center">随便啦～</td>
+<td align="center"><span><p>这是上次买的小北酱的衣服，我朋友送我的。除此之外，我还买过两件。一件黑岩的和一件穹妹的。只可惜没有带来啊！(๑•ั็ω•็ั๑)</p></span></td>
+<td align="center">周边</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:36:03</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641499460/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641499460/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641499460/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641499460/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641499460/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641499460/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641496179</td>
+<td align="center">血の祈り（눈_눈）</td>
+<td align="center">假面骑士电王</td>
+<td align="center"><span><p>最要看的假面骑士</p></span></td>
+<td align="center">假面骑士</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:27:50</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641496179/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641496179/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641496179/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641496179/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641496179/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641496179/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641496083</td>
+<td align="center">Tangle.</td>
+<td align="center">标题是什么٩(´Д` ;)۶:.*</td>
+<td align="center"><span><p>小公主0830生日快到咯(๑• . •๑)</p></span></td>
+<td align="center">初音未来</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:26:33</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641496083/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641496083/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641496083/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641496083/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641496083/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641496083/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">6293178851641495967</td>
+<td align="center">Vocaloid_潇漓</td>
+<td align="center">秒速五厘米BGM</td>
+<td align="center"><span><p>这首曲子在清脆之中又蕴含着无尽的无奈。为什么离你那么近而心又离得那么远，远过天空，远过大海。再澎湃，也只是在我一个人的心中翻滚。</p></span></td>
+<td align="center">秒速五厘米</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">正常</td>
+<td align="center">2015-08-29 09:25:50</td>
+<td align="center">
+<a href="https://cms.diyidan.net/cms/post/6293178851641495967/detail" class="btn-small" target="_blank"><i>详情</i></a>
+<br>
+
+<a href="https://cms.diyidan.net/cms/post/6293178851641495967/edit" class="btn-small"><i>更新</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641495967/edit?put_type=100&#39;);" class="btn-small"><i>点赞</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641495967/edit?put_type=101&#39;);" class="btn-small"><i>收藏</i></a>
+<br>
+<a href="javascript:void(0)" onclick="return put(&#39;/cms/post/6293178851641495967/edit?put_type=102&#39;);" class="btn-small"><i>加入本周备选</i></a>
+<br>
+<br>
+<a href="javascript:void(0)" onclick="return del(&#39;/cms/post/6293178851641495967/edit&#39;);" class="btn-small"><i>删除</i></a>
+
+</td>
+</tr>
+
+
+</tbody>
+</table>
+</div> <!-- /widget-content -->
+</div> <!-- /widget -->
+<ul class="pagination">
+	<li class="disabled"><a href="">首页</a></li>
+	<li class="disabled"><a href="">← 上一页</a></li>
+	<li class="active"><a href="">1</a></li>
+	<li><a href="https://cms.diyidan.net/cms/postlist?page=2">2</a></li>
+	<li><a href="https://cms.diyidan.net/cms/postlist?page=3">3</a></li>
+	<li><a href="https://cms.diyidan.net/cms/postlist?page=4">4</a></li>
+	<li><a href="https://cms.diyidan.net/cms/postlist?page=5">5</a></li>
+	<li><a href="https://cms.diyidan.net/cms/postlist?page=6">6</a></li>
+	<li><a href="https://cms.diyidan.net/cms/postlist?page=7">7</a></li>
+	<li><a href="https://cms.diyidan.net/cms/postlist?page=8">8</a></li>
+	<li><a href="https://cms.diyidan.net/cms/postlist?page=9">9</a></li>
+	<li><a href="https://cms.diyidan.net/cms/postlist?page=2">下一页 →</a></li>
+</ul>
+</div> <!-- /span10 -->
+
+</div> <!-- /row -->
+</div> <!-- /container -->
+</div> <!-- /content -->
+<div id="footer">
+<div class="container">
+<hr>
+<p>© 2014 上海斯干网络科技有限公司.</p> <p style="color: #ccc;">加载时间 :124ms</p>
+</div> <!-- /container -->
+</div> <!-- /footer -->
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./Account Settings - Medicine CMS Panel_files/jquery-1.11.1.min.js"></script>
+<script src="./Account Settings - Medicine CMS Panel_files/jquery-migrate-1.2.1.min.js"></script>
+<!-- <script src="/static/js/excanvas.min.js?v=3682670784157eca627a91ae04f925b8"></script>
+<script src="/static/js/jquery.flot.js?v=89bc8ea971e99653717fa69a73d70bb4"></script>
+<script src="/static/js/jquery.flot.pie.js?v=62dbbef98865feaa20a7f936c56ab931"></script>
+<script src="/static/js/jquery.flot.orderBars.js?v=254704d64151d45114cd9523283b196b"></script>
+<script src="/static/js/jquery.flot.resize.js?v=826b0d2739932ac103bf420dbadd048e"></script> -->
+<script src="./Account Settings - Medicine CMS Panel_files/bootstrap.js"></script>
+<!-- <script src="/static/js/charts/area.js?v=ab32e05a452796859e81cd82f80d5db4"></script>
+<script src="/static/js/charts/line.js?v=4d38d7b8e0a340b6d0c8d17849347c6c"></script> -->
+<script type="text/javascript">
+function del (url) {
+result = confirm("确定要删除吗？");
+if(result == true){
+$.ajaxSetup({
+beforeSend: function(jqXHR, settings) {
+type = settings.type
+if (type != 'GET' && type != 'HEAD' && type != 'OPTIONS') {
+var pattern = /(.+; *)?_xsrf *= *([^;" ]+)/;
+var xsrf = pattern.exec(document.cookie);
+if (xsrf) {
+jqXHR.setRequestHeader('X-Xsrftoken', xsrf[2]);
+}
+}
+}});
+$.ajax({
+url: url,
+type: 'DELETE',
+success: function(result) {
+alert(result);
+location.reload();
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+// alert(XMLHttpRequest.readyState + XMLHttpRequest.status + XMLHttpRequest.responseText);
+alert("删除失败");
+}
+});
+return false;
+}
+return false;
+}
+function put (url, data) {
+result = true;
+data = data?data:null;
+if(result == true){
+$.ajaxSetup({
+beforeSend: function(jqXHR, settings) {
+type = settings.type
+if (type != 'GET' && type != 'HEAD' && type != 'OPTIONS') {
+var pattern = /(.+; *)?_xsrf *= *([^;" ]+)/;
+var xsrf = pattern.exec(document.cookie);
+if (xsrf) {
+jqXHR.setRequestHeader('X-Xsrftoken', xsrf[2]);
+}
+}
+}});
+$.ajax({
+url: url,
+type: 'PUT',
+data: data,
+success: function(result) {
+alert(result);
+location.reload();
+},
+error: function(XMLHttpRequest, textStatus, errorThrown){
+// alert(XMLHttpRequest.readyState + XMLHttpRequest.status + XMLHttpRequest.responseText);
+alert("点赞失败");
+}
+});
+return false;
+}
+return false;
+}
+</script>
+
+<script language="JavaScript" type="text/javascript">
+window.alert = function(str) {
+// $("#success-alert").alert();
+// window.setTimeout(function () {
+// $("#success-alert").alert('close');
+// }, 2000);
+}
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-56107453-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body></html>
